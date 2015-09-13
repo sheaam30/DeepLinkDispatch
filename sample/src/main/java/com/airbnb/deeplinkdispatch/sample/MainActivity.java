@@ -23,6 +23,9 @@ import android.widget.Toast;
 
 import com.airbnb.deeplinkdispatch.DeepLink;
 
+import org.androidannotations.annotations.EActivity;
+
+@EActivity(R.layout.activity_main)
 @DeepLink({"airbnb://classDeepLink", "http://example.com/foo{arg}",
     "airbnb://example.com/deepLink"})
 // You can also register a single deep link for a particular activity to handle:
